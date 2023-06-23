@@ -1,0 +1,27 @@
+header{
+    color: white;
+    background-color: #434343;
+    border-bottom: 2px solid #ff6418;
+}
+nav{
+    color: #ff6418;
+}
+p:hover{
+    background-color: #ff6418;
+    color:white;
+}
+nav span:hover{
+    background-color: #ff6418;
+    color:white;
+}
+
+main{
+    border-top: 1px solid black;
+}
+.inline{
+    display: inline-block;
+}
+.go-button{
+    background-color: #ff6418;
+    color:white;
+}
