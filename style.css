@@ -25,3 +25,12 @@ main{
     background-color: #ff6418;
     color:white;
 }
+
+/* 404 page */
+
+#question-mark-404{
+    height: 50px;
+}
+#image-404{
+    height:200px;
+}
