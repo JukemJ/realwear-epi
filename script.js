@@ -37,7 +37,7 @@ function questionOne(){
     const element = document.getElementById('epi-content')
     element.innerHTML = `
     <div class="row justify-content-between">
-        <button class="go-button col-1 p-1" id="main-menu-button" onclick="window.location.href='index.html';">Main Menu</button>
+        <button class="go-button col-1 p-1" title="hf_no_number|hf_show_text|Main Menu" id="main-menu-button" onclick="window.location.href='index.html';">Main Menu</button>
         <h3 class="col-3">FINAL INSPECTION</h1>
         <select id="selSubSection" class="col-3 me-3">
             <option selected="selected" value="1">Final Inspection Procedures</option>
@@ -64,7 +64,7 @@ function questionOne(){
         <h5 class="col text-start">Perform the following procedures for Final Inspection.</h5>
     </div>
     <div class="row justify-content-end">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionTwo()">Continue</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Continue" id="continue-button" onclick="questionTwo()">Continue</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -110,7 +110,7 @@ function questionTwo(){
         <h5 class="col text-start">Repair as needed and remember to report any deficiencies in the Parts/Labor Verification Program.</h5>
     </div>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionThree()">Continue</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Continue" id="continue-button" onclick="questionThree()">Continue</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -161,7 +161,7 @@ function questionThree(){
         <h5 class="col text-start">Verify that ALL of the fluid levels (e.g., oil, transmission fluid, coolant, power steering, brake fluid and windshield-washer fluid) are at the FULL MARKS.</h5>
     </div>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionFour()">Continue</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Continue" id="continue-button" onclick="questionFour()">Continue</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -216,7 +216,7 @@ function questionFour(){
         </select>
     </div>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionFive()">Continue</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Continue" id="continue-button" onclick="questionFive()">Continue</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -258,7 +258,7 @@ function questionFive(){
     </div>
     <br>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionSix()">Continue</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Continue" id="continue-button" onclick="questionSix()">Continue</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -309,8 +309,8 @@ function questionSix(){
         <h5 class="col text-start">Are any of the engine cover latches broken?</h5>
     </div>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionSeven()">Yes</button>
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionSeven()">No</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Click Yes" id="yes-button" onclick="questionSeven()">Yes</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Click No" id="no-button" onclick="questionSeven()">No</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
@@ -346,8 +346,8 @@ function questionSeven(){
         <h5 class="col text-start">Was there any repairs and/or replacements to the brakes, transmission, differential and/or any repairs/replacements that you feel a road test is needed?</h5>
     </div>
     <div class="row justify-content-end mt-3">
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionEight()">Yes</button>
-        <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionEight()">No</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Click Yes" id="yes-button" onclick="questionEight()">Yes</button>
+        <button class="col-1 go-button me-5 p-2" title="hf_no_number|hf_show_text|Click No" id="no-button" onclick="questionEight()">No</button>
     </div>`
     document.getElementById('selSubSection').addEventListener('change',menuSelect)
 }
