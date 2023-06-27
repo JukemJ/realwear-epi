@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPI</title>
+    <title>EPI Test</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,40 +38,83 @@
         </div>
     </header>
     <nav class="row justify-content-between text-center mx-3 pt-3">
-        <button class="col" onclick="window.location.href='test.html'">test</button>
-        <span class="col p-1"><a href="inspection.html">Inspection</a></span>
-        <span class="col p-1"><a href="repair.html">Repair</a> Statement</span>
-        <span class="col p-1"><a href="EPC.html">EPC</a></span>
-        <span class="col p-1"><a href="#">Upload</a> Images</span>
-        <span class="col p-1"><a href="#">Publications</a></span>
+        <a class="col p-1" href="index.html"><span>Inspection</span></a>
+        <a class="col p-1" href="inspection.html"><span>Repair Statement</span></a>
+        <a class="col p-1" href="inspection.html"><span>EPC</span></a>
+        <a class="col p-1" href="inspection.html"><span>Upload Images</span></a>
+        <a class="col p-1" href="inspection.html"><span>Publications</span></a>
 
     </nav>
     <main class="row mt-3 pt-3">
         <nav class="col-2 text-center">
             <p class="go-button p-1">Final Inspection</p>
             <p class="p-1">Repair</p>
-            <p class="p-1">PM</p>
         </nav>
-        <section class="col-10 text-center">
+
+        <section class="col-10 text-center" id="epi-content">
             <h6>ATTENTION: Do not leave this computer unattended. The Inspector signed on to the EPI is the person held accountable for reporting the inspections and measurements accurately.</h6>
             <div class="row justify-content-between text-start mt-3">
                 <h6 class="col-4 inline">Main Section</h6>
                 <h6 class="col inline">Section Status</h6>
             </div>
-            <div class="row justify-content-between text-start mt-3">
-                <p class="col">CAMPAIGNS</p>
-                <p class="col">0/2</p>
-                <div class="col"><span class="go-button p-2">Go</span></div>
+            <div class="row justify-content-start text-start mt-3">
+                <p class="col-4">FINAL INSPECTION</p>
+                <p class="col-4">0/14</p>
+                <button class="col-1 go-button" id="final-inspection-start">Go</button>
             </div>
-            <div class="row justify-content-between text-start mt-3">
-                <p class="col">FINAL INSPECTION</p>
-                <p class="col">0/14</p>
-                <div class="col"><span class="go-button p-2">Go</span></div>
-                
+        </section>
+
+        <!-- <section class="col-10 text-center" id="epi-content">
+            <div class="row justify-content-between">
+                <button class="go-button col-1 p-1" id="main-menu-button" onclick="window.location.href='index.html';">Main Menu</button>
+                <h3 class="col-3">FINAL INSPECTION</h1>
+                <select id="selSubSection" class="col-3 me-3">
+                    <option value="1">Final Inspection Procedures</option>
+                    <option selected="selected" value="2">Inspect Lighting Systems</option>
+                    <option value="3">Inspect All Fluid Levels</option>
+                    <option value="4">Verify Tire Pressures</option>
+                    <option value="5">Torque ALL Lugs Nuts</option>
+                    <option value="6">Verify Engine Cover</option>
+                    <option value="7">Test Drive Procedures</option>
+                    <option value="8">Scan for Diagnostic Codes</option>
+                    <option value="9">Barcode Decal</option>
+                    <option value="10">Quality Assurance</option>
+                    <option value="11">Hub Heat Decals</option>
+                    <option value="13">Check Wheels</option>
+                    <option value="14">Final Recording</option>
+                    <option value="15">Precautionary Measures</option>
+                </select>
+            </div>
+            <div class="row justify-content-start mt-3">
+                <h2 class="col-1">Instructions</h2>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col-1"></div>
+                <h5 class="col text-start">To prevent from overfilling the transmission, ONLY fill to the COLD mark on the dip stick.</h5>
+            </div>
+            <br>
+            <div class="row justify-content-start">
+                <div class="col-1"></div>
+                <h5 class="col text-start">
+                    If the transmission is above the middle of the HOT range (hash marks) when at operating temperature, the excess fluid must be removed.</h5>
+            </div>
+            <br>
+            <div class="row justify-content-start">
+                <div class="col-1"></div>
+                <h5 class="col text-start">Using the MityVac Fluid Evacuator, remove the excess transmission fluid until it is in the middle of the HOT range (hash marks).</h5>
+            </div>
+            <div class="row justify-content-start">
+                <div class="col-1"></div>
+                <h5 class="col text-start">Verify that ALL of the fluid levels (e.g., oil, transmission fluid, coolant, power steering, brake fluid and windshield-washer fluid) are at the FULL MARKS.</h5>
+            </div>
+
+            <div class="row justify-content-end">
+                <button class="col-1 go-button me-5 p-2" id="continue-button" onclick="questionThree()">Continue</button>
             </div>
         
-        </section>
+        </section> -->
+        
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>

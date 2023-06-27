@@ -11,11 +11,11 @@ header{
 nav{
     color: #ff6418;
 }
-p:hover{
+nav p:hover{
     background-color: #ff6418;
     color:white;
 }
-nav span:hover{
+nav a:hover{
     background-color: #ff6418;
     color:white;
 }
@@ -29,6 +29,7 @@ main{
 .go-button{
     background-color: #ff6418;
     color:white;
+    border: none;
 }
 
 /* 404 page */
